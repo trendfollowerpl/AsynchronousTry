@@ -10,6 +10,9 @@ namespace Tasks1
 	{
 		static void Main(string[] args)
 		{
+			Task.Factory.StartNew(() => Console.WriteLine("Hello World"));
+			Task.Factory.StartNew(() => Console.WriteLine("Longrunning"), TaskCreationOptions.LongRunning);
+			Console.ReadLine();
 		}
 	}
 }
