@@ -3,6 +3,6 @@
 ################################################################################
 
 /Async/.vs/Async/v15
-/Async/Tasks1/obj/Debug
-/Async/Tasks1/bin/Debug
-/Async/PassingDataintoaTask/obj/Debug
+/Async/**/bin/Debug
+/Async/**/obj/Debug
+
