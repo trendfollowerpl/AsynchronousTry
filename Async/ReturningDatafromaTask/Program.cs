@@ -27,15 +27,48 @@ namespace ReturningDatafromaTask
 			return await Task.Factory.StartNew<string>(() => DownloadWebPage(url));
 		}
 
+		private static Task<string> BetterDownloadWebPageAsync(string url)
+		{
+			WebRequest request = WebRequest.Create(url);
+			IAsyncResult ar = request.BeginGetResponse(null, null);
+			Task<string> downloadTask = Task.Factory
+				.FromAsync(
+				ar,
+				iar =>
+					{
+						using (var response = request.EndGetResponse(iar))
+						{
+							using (var reader = new StreamReader(response.GetResponseStream()))
+							{
+								return reader.ReadToEnd();
+							}
+						}
+					});
+			return downloadTask;
+		}
+
+		private static async Task<string> DownloadTPL(string url)
+		{
+			WebRequest request = WebRequest.Create(url);
+			var response = await request.GetResponseAsync();
+
+			using (var reader = new StreamReader(response.GetResponseStream()))
+			{
+				return reader.ReadToEnd();
+			}
+		}
+
 		static async Task Main(string[] args)
 		{
-			var t = DownloadWebPageAsync("http://stooq.pl");
-			string download = "dupa";
-			progressBar(t);
+			//var t = DownloadWebPageAsync("http://stooq.pl");
+			//var t2 = BetterDownloadWebPageAsync("http://stooq.pl");
+			var t3 = DownloadTPL("http://stooq.pl");
+
+			progressBar(t3,'.');
 			Console.ReadLine();
 		}
 
-		private static void progressBar(Task t)
+		private static void progressBar(Task t, char barIndicator)
 		{
 			var x = new Stopwatch();
 			x.Start();
@@ -48,7 +81,7 @@ namespace ReturningDatafromaTask
 				}
 				if (x.ElapsedMilliseconds > 50)
 				{
-					Console.Write('.');
+					Console.Write(barIndicator);
 					x.Reset();
 				}
 			}
