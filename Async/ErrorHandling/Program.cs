@@ -8,16 +8,16 @@ namespace ErrorHandling
 {
 	class Program
 	{
-		static async Task Main(string[] args)
+		static void Main(string[] args)
 		{
 			Task task = Task.Factory.StartNew(() => throw new Exception("HAHA"));
 			try
 			{
-				await task;
+				task.Wait();
 			}
-			catch (Exception ex)
+			catch (AggregateException ex)
 			{
-				Console.Write(ex.Message);
+				Console.Write(ex.Flatten());
 			}
 			Console.ReadLine();
 		}
