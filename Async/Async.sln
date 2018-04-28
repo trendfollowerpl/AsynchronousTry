@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassingDataintoaTask", "Pas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturningDatafromaTask", "ReturningDatafromaTask\ReturningDatafromaTask.csproj", "{4C5C6C37-877C-445F-BB9C-01537AD9DC1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorHandling", "ErrorHandling\ErrorHandling.csproj", "{6A98AA10-CC83-416A-AD7B-3E3BC77BB610}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4C5C6C37-877C-445F-BB9C-01537AD9DC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C5C6C37-877C-445F-BB9C-01537AD9DC1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C5C6C37-877C-445F-BB9C-01537AD9DC1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A98AA10-CC83-416A-AD7B-3E3BC77BB610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A98AA10-CC83-416A-AD7B-3E3BC77BB610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A98AA10-CC83-416A-AD7B-3E3BC77BB610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A98AA10-CC83-416A-AD7B-3E3BC77BB610}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
