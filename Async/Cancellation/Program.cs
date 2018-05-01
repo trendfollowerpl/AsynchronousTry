@@ -12,6 +12,8 @@ namespace Cancellation
 		static void DataImport(IImport import)
 		{
 			var cts = new CancellationTokenSource();
+			cts.CancelAfter(4000);
+		
 			
 			var ct = cts.Token;
 
