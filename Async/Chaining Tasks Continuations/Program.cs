@@ -8,7 +8,7 @@ namespace Chaining_Tasks_Continuations
 {
 	class Program
 	{
-		static async Task Main(string[] args)
+		static async Task Main()
 		{
 			Task<int> firstTask =
 				Task.Factory.StartNew<int>(
@@ -19,14 +19,16 @@ namespace Chaining_Tasks_Continuations
 					});
 			Task secondTask =
 				firstTask.ContinueWith(
-					ftask => Console.WriteLine($"Second Task, First task returned {ftask.Result}")
-					);
+					ftask =>
+					{
+						Console.WriteLine($"firstTask Status: {ftask.Status}");
+						Console.WriteLine($"Second Task, First task returned {ftask.Result}");
+					});
 			await secondTask;
 
 			Console.WriteLine($"firstTask Status: {firstTask.Status}");
 			Console.WriteLine($"secondTask Status: {secondTask.Status}");
 			Console.ReadLine();
-
 		}
 	}
 }
