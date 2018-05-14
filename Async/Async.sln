@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cancellation", "Cancellatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chaining Tasks Continuations", "Chaining Tasks Continuations\Chaining Tasks Continuations.csproj", "{8DBE48EE-8A4B-4A66-9B9E-723E752E1085}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nested and Child Tasks", "Nested and Child Tasks\Nested and Child Tasks.csproj", "{3111C3BE-BBFE-4A30-9562-059D8913D2C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{8DBE48EE-8A4B-4A66-9B9E-723E752E1085}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DBE48EE-8A4B-4A66-9B9E-723E752E1085}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DBE48EE-8A4B-4A66-9B9E-723E752E1085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3111C3BE-BBFE-4A30-9562-059D8913D2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3111C3BE-BBFE-4A30-9562-059D8913D2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3111C3BE-BBFE-4A30-9562-059D8913D2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3111C3BE-BBFE-4A30-9562-059D8913D2C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
