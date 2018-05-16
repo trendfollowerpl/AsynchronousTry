@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
-namespace Monitor
+namespace MonitorMS
 {
 	public class SmallBusiness
 	{
 		private decimal cash;
 		private decimal receivables;
+		private readonly object stateGuard = new { };
+
 		public SmallBusiness(decimal cash, decimal receivables)
 		{
 			this.cash = cash;
@@ -17,12 +20,32 @@ namespace Monitor
 		}
 		public void ReceivePayment(decimal amount)
 		{
-			cash += amount;
-			receivables -= amount;
+			bool lockTaken = false;
+
+			try
+			{
+				Monitor.Enter(stateGuard, ref lockTaken);
+				cash += amount;
+				receivables -= amount;
+			}
+			finally
+			{
+				if (lockTaken)
+				{
+					Monitor.Exit(stateGuard);
+				}
+			}
 		}
+
 		public decimal NetWorth
 		{
-			get { return cash + receivables; }
+			get
+			{
+				Monitor.Enter(stateGuard);
+				decimal netWorth = cash + receivables;
+				Monitor.Exit(stateGuard);
+				return netWorth;
+			}
 		}
 	}
 
