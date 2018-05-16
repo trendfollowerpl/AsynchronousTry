@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nonatomic", "Nonatomic\Nona
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Interlocked Class", "The Interlocked Class\The Interlocked Class.csproj", "{00DD7221-E4C0-490A-96FB-7BCC14FE38B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor", "Monitor\Monitor.csproj", "{441ABAD3-42BE-47CC-A817-F130EE941142}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor and Lock", "Monitor\Monitor and Lock.csproj", "{441ABAD3-42BE-47CC-A817-F130EE941142}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

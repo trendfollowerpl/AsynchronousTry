@@ -37,6 +37,15 @@ namespace MonitorMS
 			}
 		}
 
+		public void ReceivePayment_LockVersion(decimal amount)
+		{
+			lock (stateGuard)
+			{
+				cash += amount;
+				receivables -= amount;
+			}
+		}
+		
 		public decimal NetWorth
 		{
 			get
