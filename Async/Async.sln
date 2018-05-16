@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nonatomic", "Nonatomic\Nona
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Interlocked Class", "The Interlocked Class\The Interlocked Class.csproj", "{00DD7221-E4C0-490A-96FB-7BCC14FE38B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor", "Monitor\Monitor.csproj", "{441ABAD3-42BE-47CC-A817-F130EE941142}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{00DD7221-E4C0-490A-96FB-7BCC14FE38B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00DD7221-E4C0-490A-96FB-7BCC14FE38B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00DD7221-E4C0-490A-96FB-7BCC14FE38B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{441ABAD3-42BE-47CC-A817-F130EE941142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{441ABAD3-42BE-47CC-A817-F130EE941142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{441ABAD3-42BE-47CC-A817-F130EE941142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{441ABAD3-42BE-47CC-A817-F130EE941142}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{3111C3BE-BBFE-4A30-9562-059D8913D2C2} = {A3340670-D3E6-4452-B9C4-C4D9C9497BBA}
 		{59D122E6-1A1E-4F5C-A4B6-5BAAFFE05137} = {5CF0D521-F8B5-4275-B9CD-C1145F47345E}
 		{00DD7221-E4C0-490A-96FB-7BCC14FE38B4} = {5CF0D521-F8B5-4275-B9CD-C1145F47345E}
+		{441ABAD3-42BE-47CC-A817-F130EE941142} = {5CF0D521-F8B5-4275-B9CD-C1145F47345E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F83F578-6A3C-4AFF-A454-4EAEF7EB56B1}
