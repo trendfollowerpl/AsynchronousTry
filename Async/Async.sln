@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Interlocked Class", "Th
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor and Lock", "Monitor\Monitor and Lock.csproj", "{441ABAD3-42BE-47CC-A817-F130EE941142}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Structures", "Data Structures", "{9178ECDC-C86F-4A0B-A05A-84E34D8A996E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lazy Example", "Lazy Example\Lazy Example.csproj", "{1ABC1521-D737-439A-B87A-671FBADEE1D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +77,10 @@ Global
 		{441ABAD3-42BE-47CC-A817-F130EE941142}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{441ABAD3-42BE-47CC-A817-F130EE941142}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{441ABAD3-42BE-47CC-A817-F130EE941142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ABC1521-D737-439A-B87A-671FBADEE1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABC1521-D737-439A-B87A-671FBADEE1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABC1521-D737-439A-B87A-671FBADEE1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABC1521-D737-439A-B87A-671FBADEE1D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +96,7 @@ Global
 		{59D122E6-1A1E-4F5C-A4B6-5BAAFFE05137} = {5CF0D521-F8B5-4275-B9CD-C1145F47345E}
 		{00DD7221-E4C0-490A-96FB-7BCC14FE38B4} = {5CF0D521-F8B5-4275-B9CD-C1145F47345E}
 		{441ABAD3-42BE-47CC-A817-F130EE941142} = {5CF0D521-F8B5-4275-B9CD-C1145F47345E}
+		{1ABC1521-D737-439A-B87A-671FBADEE1D4} = {9178ECDC-C86F-4A0B-A05A-84E34D8A996E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F83F578-6A3C-4AFF-A454-4EAEF7EB56B1}
